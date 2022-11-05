@@ -35,8 +35,6 @@ public class CarEntity {
 	private String model;
 	private float price;
 	private String fuelType;
-//	@Column(name="engine_id")
-//	private int engineId;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="engine_id")
 	private EngineEntity engine;
